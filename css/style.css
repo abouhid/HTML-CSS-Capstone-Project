@@ -111,15 +111,29 @@ nav {
   background-size: cover;
   text-align: center;
   color: white;
-  text-shadow: 2px 2px black;
   padding: 5%;
+
 }
 
-.searchContainer h2 {
+nav h2 {
   font-size: 5vw;
+  text-shadow: 2px 2px black;
 }
-.searchContainer h3 {
+
+nav h3 {
   font-size: 3vw;
+  text-shadow: 2px 2px black;
+}
+
+nav ul{
+  margin-top: 4%;
+  width: 100%;
+
+}
+
+.form-inline input,
+.size button{
+  font-size: 2.5vw;
 }
 
 
