@@ -260,6 +260,7 @@ input[type=checkbox] {
 }
 
 .products img{
+  cursor: pointer;
   width: 33%;
   align-self: center;
   padding: 6%;
