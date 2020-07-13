@@ -25,7 +25,7 @@
   </script>
 </head>
 
-<body>
+<body class="bg-grey">
   <!-- adicionar float right pro desktop -->
   <nav class="w-100">
 
@@ -56,145 +56,335 @@
 
   </nav>
 
-    <section class="text-center p5 mt7 text-light bg-red">
-      <h3>ZATTIX</h3>
-      <h4 class="fs3">Buying your instruments the way it should be done</h4>
+  <section class="text-center p5 mt4 text-light bg-red">
+    <h3>ZATTIX</h3>
+    <h4 class="fs3">Buying your instruments the way it should be done</h4>
 
-      <ul class="d-flex justify-content-center mt-4">
-        <li class="dropdown size">
-          <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            All Departments
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#">Guitar / Bass</a>
-            <a class="dropdown-item" href="#">Drums</a>
-            <a class="dropdown-item" href="#">Piano / Keyboards</a>
-            <a class="dropdown-item" href="#">Others</a>
+    <ul class="d-flex justify-content-center mt-4">
+      <li class="dropdown size">
+        <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          All Departments
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">Guitar / Bass</a>
+          <a class="dropdown-item" href="#">Drums</a>
+          <a class="dropdown-item" href="#">Piano / Keyboards</a>
+          <a class="dropdown-item" href="#">Others</a>
+
+        </div>
+      </li>
+      <li class="form-inline">
+        <input class="form-control ml-2 fs2" type="search" placeholder="What are you searching for?"
+          aria-label="Search">
+
+      </li>
+      <li class="size"><a href="search_results.html"><button class="btn btn-light ml-2"
+            type="submit">Search</button></a></li>
+    </ul>
+
+  </section>
+  <main class="px-3">
+    <section>     
+      <h4 class="mt4 fs3">Hot Deals</h4>
+
+      <div class="carousel slide" data-ride="carousel">
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="col-3 float-left p-0 border"
+                src="https://http2.mlstatic.com/guitarra-gibson-traditional-les-paul-premium-plus-wine-red-D_NQ_NP_711687-MLB42319823910_062020-F.webp"
+                alt="First slide">
+              <div class="col-9 float-right">
+                <h4 class="font-weight-bold fs3">Gibson Traditional Les Paul Premium Plus Wine Red</h4>
+                <h5 class="red fs2">New</h5>
+                <h6 class="fs2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, perspiciatis.
+                  Delectus, labore!
+                </h6>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="dropdown size m-0">
+                    <button class="btn btn-light p-0" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                      aria-haspopup="true" aria-expanded="false">
+                      <i class="fas fa-plus-square red fs3 font-weight-bold"></i>
+                    </button>
+                    <div class="dropdown-menu border" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">Add to Wishlist</a>
+                      <a class="dropdown-item" href="#">Send a Message</a>
+                      <a class="dropdown-item" href="#">More Details</a>
+                    </div>
+                  </div>
+                  <h4 class="red font-weight-bold fs3 m-0">$450</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="col-3 float-left p-0">
+                <img class="w-100"
+                  src="https://gloimg.gbtcdn.com/storage/item/6538088194642685952/15607/f6f43ac93373.jpg_100x100.jpg"
+                  alt="First slide">
+              </div>
+              <div class="col-9 float-right">
+                <h4 class="font-weight-bold fs3">Digital Piano vidaXL with 88-key Pedals Black Melamine Panel - Black
+                  France</h4>
+                <h5 class="red fs2">Used</h5>
+                <h6 class="fs2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, perspiciatis.
+                  Delectus, labore!
+                </h6>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="dropdown size m-0">
+                    <button class="btn btn-light p-0" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                      aria-haspopup="true" aria-expanded="false">
+                      <i class="fas fa-plus-square red fs3 font-weight-bold"></i>
+                    </button>
+                    <div class="dropdown-menu border" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">Add to Wishlist</a>
+                      <a class="dropdown-item" href="#">Send a Message</a>
+                      <a class="dropdown-item" href="#">More Details</a>
+
+                    </div>
+                  </div>
+                  <h4 class="red font-weight-bold fs3 m-0">$289.99</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="col-3 float-left p-0">
+                <img class="w-100"
+                  src="https://gloimg.gbtcdn.com/images/pdm-product-pic/Electronic/2019/05/10/source-img/20190510143637_37273.jpg_100x100.jpg"
+                  alt="First slide">
+              </div>
+              <div class="col-9 float-right">
+                <h4 class="font-weight-bold fs3">SLADE 14 inch Snare Drum with Stick Strap Wrench - Red Wine 4</h4>
+                <h5 class="red fs2">New</h5>
+                <h6 class="fs2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, perspiciatis.
+                  Delectus, labore!
+                </h6>
+
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="dropdown size m-0">
+                    <button class="btn btn-light p-0" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                      aria-haspopup="true" aria-expanded="false">
+                      <i class="fas fa-plus-square red fs3 font-weight-bold"></i>
+                    </button>
+                    <div class="dropdown-menu border" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">Add to Wishlist</a>
+                      <a class="dropdown-item" href="#">Send a Message</a>
+                      <a class="dropdown-item" href="#">More Details</a>
+                    </div>
+                  </div>
+                  <h4 class="red font-weight-bold fs3 m-0"> $57.93</h4>
+                </div>
+              </div>
+            </div>
 
           </div>
-        </li>
-        <li class="form-inline">
-          <input class="form-control ml-2 " type="search" placeholder="What are you searching for?" aria-label="Search">
-
-        </li>
-        <li class="size"><button class="btn btn-light ml-2" type="submit">Search</button></li>
-      </ul>
-
+          <a class="carousel-control-prev red" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next red" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+      </div>
     </section>
-    <main class="px-3">
+
 
     <section>
-      <h4 class="mt7 fs3">Hot Deals</h4>
+      <h4 class="mt4 fs3">Instruments</h4>
+      <hr class="my-1">
 
-    <div class="carousel slide" data-ride="carousel">
+      <ul class="products">
+        <li>
+          <img
+            src="https://gloimg.gbtcdn.com/images/pdm-product-pic/Electronic/2019/05/10/source-img/20190510143637_37273.jpg_100x100.jpg"
+            alt="product">
+          <div>
+            <h4 class="font-weight-bold fs2">SLADE 14 inch Snare Drum with Stick Strap Wrench - Red Wine 4</h4>
+            <h5 class="red fs2">New</h5>
+            <h5 class="fs2"><strong>From:</strong> Juiz de Fora, Brazil</h5>
 
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-      
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-              <img class="col-3 float-left p-0 border" src="https://http2.mlstatic.com/guitarra-gibson-traditional-les-paul-premium-plus-wine-red-D_NQ_NP_711687-MLB42319823910_062020-F.webp"
-                alt="First slide">
-            <div class="col-9 float-right">
-              <h4 class="font-weight-bold fs3">Gibson Traditional Les Paul Premium Plus Wine Red</h4>
-              <h5 class="red fs2">New</h5>
-              <h6 class="fs2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, perspiciatis. Delectus, labore!
-              </h6>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="dropdown size m-0">
-                <button class="btn btn-light p-0" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-                  aria-haspopup="true" aria-expanded="false">
-                  <i class="fas fa-plus-square red fs3 font-weight-bold"></i>
-                </button>
-                <div class="dropdown-menu border" aria-labelledby="dropdownMenuButton">
-                  <a class="dropdown-item" href="#">Guitar / Bass</a>
-                  <a class="dropdown-item" href="#">Drums</a>
-                  <a class="dropdown-item" href="#">Piano / Keyboards</a>
-                  <a class="dropdown-item" href="#">Others</a>      
-                </div>
-              </div>
-              <h4 class="red font-weight-bold fs3 m-0">$450</h4>
-            </div>
-            </div>
-          </div>
-
-          <div class="carousel-item">
-            <div class="col-3 float-left p-0">
-              <img class="w-100" src="https://gloimg.gbtcdn.com/storage/item/6538088194642685952/15607/f6f43ac93373.jpg_100x100.jpg"
-                alt="First slide">
-            </div>
-            <div class="col-9 float-right">
-              <h4 class="font-weight-bold fs3">Digital Piano vidaXL with 88-key Pedals Black Melamine Panel - Black France</h4>
-              <h5 class="red fs2">Used</h5>
-              <h6 class="fs2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, perspiciatis. Delectus, labore!
-              </h6>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="dropdown size m-0">
-                <button class="btn btn-light p-0" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-                  aria-haspopup="true" aria-expanded="false">
-                  <i class="fas fa-plus-square red fs3 font-weight-bold"></i>
-                </button>
-                <div class="dropdown-menu border" aria-labelledby="dropdownMenuButton">
-                  <a class="dropdown-item" href="#">Guitar / Bass</a>
-                  <a class="dropdown-item" href="#">Drums</a>
-                  <a class="dropdown-item" href="#">Piano / Keyboards</a>
-                  <a class="dropdown-item" href="#">Others</a>
-      
-                </div>
-              </div>
-              <h4 class="red font-weight-bold fs3 m-0">$289.99</h4>
-            </div>
-            </div>
-          </div>
-
-          <div class="carousel-item">
-            <div class="col-3 float-left p-0">
-              <img class="w-100" src="https://gloimg.gbtcdn.com/images/pdm-product-pic/Electronic/2019/05/10/source-img/20190510143637_37273.jpg_100x100.jpg"
-                alt="First slide">
-            </div>
-            <div class="col-9 float-right">
-              <h4 class="font-weight-bold fs3">SLADE 14 inch Snare Drum with Stick Strap Wrench - Red Wine	4</h4>
-              <h5 class="red fs2">New</h5>
-              <h6 class="fs2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, perspiciatis. Delectus, labore!
-              </h6>
-
-              <div class="d-flex justify-content-between align-items-center">
+            <div class="d-flex justify-content-between align-items-center">
               <div class="dropdown size m-0">
                 <button class="btn btn-light p-0" type="button" id="dropdownMenuButton" data-toggle="dropdown"
                   aria-haspopup="true" aria-expanded="false">
                   <i class="fas fa-plus-square red fs3 font-weight-bold"></i>
                 </button>
                 <div class="dropdown-menu border" aria-labelledby="dropdownMenuButton">
-                  <a class="dropdown-item" href="#">Guitar / Bass</a>
-                  <a class="dropdown-item" href="#">Drums</a>
-                  <a class="dropdown-item" href="#">Piano / Keyboards</a>
-                  <a class="dropdown-item" href="#">Others</a>
-      
+                  <a class="dropdown-item" href="#">Add to Wishlist</a>
+                  <a class="dropdown-item" href="#">Send a Message</a>
+                  <a class="dropdown-item" href="#">More Details</a>
                 </div>
               </div>
               <h4 class="red font-weight-bold fs3 m-0"> $57.93</h4>
             </div>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://gloimg.gbtcdn.com/images/pdm-product-pic/Electronic/2019/05/10/source-img/20190510143637_37273.jpg_100x100.jpg"
+            alt="product">
+          <div>
+            <h4 class="font-weight-bold fs2">SLADE 14 inch Snare Drum with Stick Strap Wrench - Red Wine 4</h4>
+            <h5 class="red fs2">New</h5>
+            <h5 class="fs2"><strong>From:</strong> Juiz de Fora, Brazil</h5>
+
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="dropdown size m-0">
+                <button class="btn btn-light p-0" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-plus-square red fs3 font-weight-bold"></i>
+                </button>
+                <div class="dropdown-menu border" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Add to Wishlist</a>
+                  <a class="dropdown-item" href="#">Send a Message</a>
+                  <a class="dropdown-item" href="#">More Details</a>
+                </div>
+              </div>
+              <h4 class="red font-weight-bold fs3 m-0"> $57.93</h4>
             </div>
           </div>
+        </li>
+        <li>
+          <img
+            src="https://gloimg.gbtcdn.com/images/pdm-product-pic/Electronic/2019/05/10/source-img/20190510143637_37273.jpg_100x100.jpg"
+            alt="product">
+          <div>
+            <h4 class="font-weight-bold fs2">SLADE 14 inch Snare Drum with Stick Strap Wrench - Red Wine 4</h4>
+            <h5 class="red fs2">New</h5>
+            <h5 class="fs2"><strong>From:</strong> Juiz de Fora, Brazil</h5>
 
-        </div>
-        <a class="carousel-control-prev red" href="#carouselExampleIndicators" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next red" href="#carouselExampleIndicators" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div></div>
-    </div>
-  </section>
-    <section>
-      <h4 class="mt7 fs3">Hot Deals</h4>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="dropdown size m-0">
+                <button class="btn btn-light p-0" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-plus-square red fs3 font-weight-bold"></i>
+                </button>
+                <div class="dropdown-menu border" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Add to Wishlist</a>
+                  <a class="dropdown-item" href="#">Send a Message</a>
+                  <a class="dropdown-item" href="#">More Details</a>
+                </div>
+              </div>
+              <h4 class="red font-weight-bold fs3 m-0"> $57.93</h4>
+            </div>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://gloimg.gbtcdn.com/images/pdm-product-pic/Electronic/2019/05/10/source-img/20190510143637_37273.jpg_100x100.jpg"
+            alt="product">
+          <div>
+            <h4 class="font-weight-bold fs2">SLADE 14 inch Snare Drum with Stick Strap Wrench - Red Wine 4</h4>
+            <h5 class="red fs2">New</h5>
+            <h5 class="fs2"><strong>From:</strong> Juiz de Fora, Brazil</h5>
+
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="dropdown size m-0">
+                <button class="btn btn-light p-0" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-plus-square red fs3 font-weight-bold"></i>
+                </button>
+                <div class="dropdown-menu border" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Add to Wishlist</a>
+                  <a class="dropdown-item" href="#">Send a Message</a>
+                  <a class="dropdown-item" href="#">More Details</a>
+                </div>
+              </div>
+              <h4 class="red font-weight-bold fs3 m-0"> $57.93</h4>
+            </div>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://gloimg.gbtcdn.com/images/pdm-product-pic/Electronic/2019/05/10/source-img/20190510143637_37273.jpg_100x100.jpg"
+            alt="product">
+          <div>
+            <h4 class="font-weight-bold fs2">SLADE 14 inch Snare Drum with Stick Strap Wrench - Red Wine 4</h4>
+            <h5 class="red fs2">New</h5>
+            <h5 class="fs2"><strong>From:</strong> Juiz de Fora, Brazil</h5>
+
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="dropdown size m-0">
+                <button class="btn btn-light p-0" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-plus-square red fs3 font-weight-bold"></i>
+                </button>
+                <div class="dropdown-menu border" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Add to Wishlist</a>
+                  <a class="dropdown-item" href="#">Send a Message</a>
+                  <a class="dropdown-item" href="#">More Details</a>
+                </div>
+              </div>
+              <h4 class="red font-weight-bold fs3 m-0"> $57.93</h4>
+            </div>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://gloimg.gbtcdn.com/images/pdm-product-pic/Electronic/2019/05/10/source-img/20190510143637_37273.jpg_100x100.jpg"
+            alt="product">
+          <div>
+            <h4 class="font-weight-bold fs2">SLADE 14 inch Snare Drum with Stick Strap Wrench - Red Wine 4</h4>
+            <h5 class="red fs2">New</h5>
+            <h5 class="fs2"><strong>From:</strong> Juiz de Fora, Brazil</h5>
+
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="dropdown size m-0">
+                <button class="btn btn-light p-0" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-plus-square red fs3 font-weight-bold"></i>
+                </button>
+                <div class="dropdown-menu border" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Add to Wishlist</a>
+                  <a class="dropdown-item" href="#">Send a Message</a>
+                  <a class="dropdown-item" href="#">More Details</a>
+                </div>
+              </div>
+              <h4 class="red font-weight-bold fs3 m-0"> $57.93</h4>
+            </div>
+          </div>
+        </li>
+      </ul>
 
     </section>
-
   </main>
+<hr>
+  <footer>
+    <div class="d-flex">
+      <div class="left-footer text-center col-6">
+        <a href="#" class="grey"><i class="fa fa-guitar red"></i> ZATTIX</a>
+
+        <p class="grey text-left px-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. In praesentium culpa dignissimos cupiditate doloremque quia assumenda! Aliquam dolor ratione quisquam.</p>
+      </div>
+      <div class="right-footer col-6">
+        <a href="#" class="fs3 grey red">Categories</a>
+        <hr class="bg-red m-0">
+        <ul class="font-weight-bold grey">
+          <li>Instruments</li>
+          <li>Instruments</li>
+          <li>Instruments</li>
+          <li>Instruments</li>
+          <li>Instruments</li>
+          <li>Instruments</li>
+        </ul>
+        
+      </div>
+    </div>
+   <div class="grey text-center">
+    <h5 class="fs2"> © 2020 Zattix.com. All Rights Reserved. Designed by Mohammed Awad. Adapted by Alexandre Bouhid  </h5>
+    <a href="#"><i class="fab fa-facebook-square text-secondary h3"></i></a>
+      <a href="#"><i class="fab fa-twitter text-secondary h4 ml-2"></i></a>
+      <a href="#"><i class="fab fa-instagram text-secondary h4 ml-2"></i></a>
+      <a href="#"><i class="fab fa-tumblr text-secondary h4 ml-2"></i></a>
+    </div>
+  </footer>
 </body>
 
 </html>
