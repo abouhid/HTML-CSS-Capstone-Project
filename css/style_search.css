@@ -155,10 +155,22 @@ nav a,
   margin-top: 45px;
 }
 
-.size button,
-.form-inline input, 
 .fs3{
   font-size: 3vw;
+}
+
+.form-inline input, 
+.size button {
+font-size: 2.5vw;
+}
+
+.header{
+  background-image: linear-gradient(rgb(211, 82, 102, 0.5) 60%, rgb(56, 56, 56)), url(https://cdn2.vectorstock.com/i/1000x1000/50/61/jazz-seamless-background-vector-1445061.jpg);
+}
+
+.header h3,
+.header h4{
+  text-shadow: 2px 2px #383838;
 }
 
 .fs2{
@@ -175,8 +187,12 @@ nav a,
   margin-bottom: 1vh;
 }
 
+.brands{
+  margin:15px;
+}
+
 .filterTitle{
-  font-size: 5vw;
+  font-size: 4vw;
 }
 
 .list-filters {
@@ -265,6 +281,7 @@ input[type=checkbox] {
 
 .nav-right li{
   margin-left: 20px;
+  cursor: pointer;
 }
 
 .nav-left {
@@ -288,10 +305,6 @@ input[type=checkbox] {
   font-size: 20px;
 }
 
-.products{
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
-
-}
 .products h4{
   overflow: hidden;
   text-overflow: ellipsis;
@@ -302,6 +315,27 @@ input[type=checkbox] {
 
 .listProd .title{
   font-size: 36px;
+}
+
+.brands{
+  position: sticky;
+  top: 65px;
+}
+
+.filterTitle{
+  font-size: 20px;
+}
+.list-filters {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-auto-rows: minmax(min-content, max-content);
+}
+
+.list-filters li {
+  display: flex;
+  font-size: 1.5vw;
+  width: fit-content;
+  align-items: center;
 }
 
 }

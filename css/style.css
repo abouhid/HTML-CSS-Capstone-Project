@@ -155,10 +155,22 @@ nav a,
   margin: 3vw auto;
 }
 
-.size button,
-.form-inline input, 
 .fs3{
   font-size: 3vw;
+}
+
+.header{
+  background-image: linear-gradient(rgb(211, 82, 102, 0.5) 60%, rgb(56, 56, 56)), url(https://cdn2.vectorstock.com/i/1000x1000/50/61/jazz-seamless-background-vector-1445061.jpg);
+}
+
+.header h3,
+.header h4{
+  text-shadow: 2px 2px #383838;
+}
+
+.form-inline input, 
+.size button {
+font-size: 2.5vw;
 }
 
 .fs2{
@@ -185,8 +197,6 @@ nav a,
     border: none;
     color: white;
     margin-top: 2vw;
-
-
 }
 
 .products{
@@ -243,6 +253,7 @@ nav a,
 
 .nav-right li{
   margin-left: 20px;
+  cursor: pointer;
 }
 
 .nav-left {
@@ -268,7 +279,6 @@ nav a,
 
 .products{
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
-
 }
 .products h4{
   overflow: hidden;
