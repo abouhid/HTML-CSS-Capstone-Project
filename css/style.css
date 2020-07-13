@@ -89,6 +89,12 @@ video {
   vertical-align: baseline;
 }
 
+.colors {
+  color: #d35266;
+  color: #888;
+  color: #383838;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -108,64 +114,66 @@ a {
 
 nav {
   height: fit-content;
-  background-image: url(https://thumbs.dreamstime.com/z/music-instrument-background-1760976.jpg);
-  background-position: 50%;
-  background-size: cover;
+  background-color: #383838;
+  position: fixed;
   text-align: center;
-  color: white;
+  color: #888;
+  padding: 1%;
+  top: 0;
+  font-size: 2vw;
+  z-index: 99;
+}
+
+nav a {
+  color: #888;
+}
+
+.red {
+  color: #d35266;
+}
+
+.bg-red {
+  background-color: #d35266;
+}
+
+.p5 {
   padding: 5%;
 }
 
-main{
-  background: linear-gradient( rgb(240, 196, 157) 70%, rgb(196, 59, 49)) ;
+.mt7 {
+  margin-top: 7vw;
 }
 
-nav h2 {
-  font-size: 6vw;
-  text-shadow: 2px 2px black;
+.p5 h3 {
+  font-size: 8vw;
+  margin: 3vw auto;
 }
 
-nav h3 {
-  font-size: 4vw;
-  text-shadow: 2px 2px black;
+.fs3{
+  font-size: 3vw;
 }
 
-nav ul{
-  margin-top: 4%;
-  width: 100%;
+.fs2{
+  font-size: 2vw;
 }
 
-.form-inline input,
-.size button{
-  font-size: 2.5vw;
+.size button,
+.form-inline input {
+  font-size: 3vw;
 }
 
-.carousel-item {
-  height: 50vh;
-  position: relative;
-  text-align: center;
+.float-left{
+  height: auto;
 }
 
-.carousel-item img {
-  opacity: 0.3;
-  
+ .float-right h4,
+ .float-right h5,
+ .float-right h6 {
+  margin-bottom: 1vh;
 }
 
-.carousel-item h3,
-.carousel-item h2{
-  position: absolute;
-  bottom: 5vw;
-  color: white;
-  font-weight: 700;
-  font-size: 6vw;
-  margin-left: 1vw;
-}
-.carousel-item h3 {
-  bottom: 0;
-  font-size: 4vw;
+.carousel-inner{
+  padding: 0 10%;
 }
 
-
-@media screen and (min-width: 768px) {
- 
-}
+@media screen and (min-width: 768px) {}
