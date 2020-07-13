@@ -124,13 +124,11 @@ nav {
   z-index: 99;
 }
 
-nav a {
+nav a,
+.grey {
   color: #888;
 }
 
-.grey{
-  color: #888;
-}
 
 .bg-grey{
   background-color: #f8f8f8;
@@ -149,7 +147,7 @@ nav a {
 }
 
 .mt4 {
-  margin-top: 7vw;
+  margin-top: 4vw;
 }
 
 .p5 h3 {
@@ -181,10 +179,20 @@ nav a {
   padding: 0 10%;
 }
 
+.adsBut button{
+  padding: 2% 3%;
+    background-color: #d35266; 
+    border: none;
+    color: white;
+    margin-top: 2vw;
+
+
+}
+
 .products{
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-  gap: 2vw;
+  gap: 1vw;
   color: #888;
 }
 
@@ -241,6 +249,27 @@ nav a {
 }
 .fs2{
   font-size: 16px;
+}
+
+.size button,
+.form-inline input{
+  font-size: 20px;
+}
+
+.products{
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+
+}
+.products h4{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.listProd .title{
+  font-size: 36px;
 }
 
 }
