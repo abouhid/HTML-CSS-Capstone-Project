@@ -157,17 +157,14 @@ nav a {
   margin: 3vw auto;
 }
 
+.size button,
+.form-inline input, 
 .fs3{
   font-size: 3vw;
 }
 
 .fs2{
   font-size: 2vw;
-}
-
-.size button,
-.form-inline input {
-  font-size: 3vw;
 }
 
 .float-left{
@@ -214,6 +211,36 @@ nav a {
 .left-footer a{
   font-size: 5vw;
 }
+.nav-right{
+  display: none;
+}
 
+@media screen and (min-width: 768px) {
+.nav-right{
+  display: flex;  
+  width: fit-content;
+  padding: 0 20px;
+  white-space: nowrap;
+}
 
-@media screen and (min-width: 768px) {}
+.nav-right li{
+  margin-left: 20px;
+}
+
+.nav-left {
+  justify-content: space-around;
+}
+
+.nav-left li,
+.nav-left li button {
+  font-size: 14px;
+}
+
+.fs3{
+  font-size: 18px;
+}
+.fs2{
+  font-size: 16px;
+}
+
+}
