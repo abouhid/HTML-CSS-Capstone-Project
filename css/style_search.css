@@ -215,13 +215,13 @@ input[type=checkbox] {
 
 .products{
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1fr);
   gap: 1vw;
   color: #888;
 }
 
 .products img{
-  width: 75%;
+  width: 33%;
   align-self: center;
   padding: 6%;
 }
@@ -230,7 +230,7 @@ input[type=checkbox] {
   border: 1px solid #d35266;
   border-radius: 3px;
   margin: auto 10px;
-  padding: 0 8%;
+  padding: 2% 8%;
   display: flex;
   flex-direction: column;
   background-color: white;
