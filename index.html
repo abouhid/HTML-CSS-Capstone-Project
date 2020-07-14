@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Jazzix - Instruments and Music</title>
+  <link rel="icon"
+    href="data:image/png;base64,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">
+  <link rel="stylesheet" href="styles/style.css" type="text/css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
+</head>
+
+<body class="bg-grey">
+  <nav class="w-100 d-flex justify-content-between">
+
+    <ul class="d-flex justify-content-between m-0 w-100 align-items-center nav-left">
+      <li><a href="#" class="fs3 text-light"><i class="fa fa-guitar red"></i>JAZZIX</a></li>
+      <li><a href="#"><i class="fa fa-home red"> HOME</i></a></li>
+      <li><a href="#"><i class="fa fa-home "> COLLECTIONS</i></a></li>
+      <li><a href="#"><i class="fa fa-shopping-cart"> PURCHASE LIST</i></a></li>
+      <li class="bg-red rounded size"><button class="btn text-light fs3" type="submit">POST AN AD</button></li>
+
+    </ul>
+    <ul class="justify-content-between m-0 align-items-center nav-right">
+      <li><i class="fas fa-envelope"></i></li>
+      <li class="ml-4"> Alex Bouhid <i class="fas fa-user ml-1"></i></li>
+    </ul>
+  </nav>
+
+  <section class="text-center p5 text-light bg-red header">
+    <h1 class="mt-5">🎷 JAZZIX 🎷</h1>
+    <h4 class="fs3">Buying your instruments the way it should be done</h4>
+
+    <ul class="d-flex justify-content-center mt-4">
+      <li class="dropdown size">
+        <button class="btn btn-light dropdown-toggle" type="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Categories
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Guitar / Bass</a>
+          <a class="dropdown-item" href="#">Drums</a>
+          <a class="dropdown-item" href="#">Piano / Keyboards</a>
+          <a class="dropdown-item" href="#">Others</a>
+
+        </div>
+      </li>
+      <li class="dropdown size ml-1">
+        <button class="btn btn-light dropdown-toggle" type="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Location
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Brazil</a>
+          <a class="dropdown-item" href="#">UK</a>
+          <a class="dropdown-item" href="#">Poland</a>
+          <a class="dropdown-item" href="#">Others</a>
+
+        </div>
+      </li>
+      <li class="form-inline size">
+        <input class="form-control ml-2 " type="search" placeholder="Start rocking!" aria-label="Search">
+
+      </li>
+      <li class="size"><a href="search_results.html" class="btn btn-light ml-2">Search</a></li>
+    </ul>
+
+  </section>
+  <main class="px-3">
+    <section>
+      <h4 class="mt4 grey font-weight-bold">Hot Deals</h4>
+      <hr class="bg-grey">
+      <div class="carousel slide" data-ride="carousel">
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+
+          <div class="carousel-inner">
+            <div class="carousel-item active ">
+              <div class="d-flex m-0">
+              <div class="col-3 p-0">
+                <span class="img1 hotdeals"></span>
+              </div>
+              <div class="col-9 f-right ">
+                <h4 class="font-weight-bold fs3">Gibson Traditional Les Paul Premium Plus Wine Red</h4>
+                <h5 class="red fs2">New</h5>
+                <h6 class="fs2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, perspiciatis.
+                  Delectus, labore!
+                </h6>
+                <h5 class="fs2"><strong>From:</strong> Juiz de Fora, Brazil</h5>
+                <div class="d-flex adsBut fs3">
+                  <button type="button">$450</button>
+                  <button type="button" class="border-left border-light"><i class="fas fa-shopping-cart"></i> Purchase
+                    details</button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+            <div class="carousel-item ">
+              <div class="d-flex m-0">
+              <div class="col-3 p-0">
+                <span class="img2 hotdeals"></span>
+              </div>
+              <div class="col-9 f-right">
+                <h4 class="font-weight-bold fs3">Digital Piano vidaXL with 88-key Pedals Black Melamine Panel - Black
+                  France</h4>
+                <h5 class="red fs2">Used</h5>
+                <h6 class="fs2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, perspiciatis.
+                  Delectus, labore!
+                </h6>
+                <h5 class="fs2"><strong>From:</strong> Wroclaw, Poland</h5>
+                <div class="d-flex adsBut fs3">
+                  <button type="button">$450</button>
+                  <button type="button" class="border-left border-light"><i class="fas fa-shopping-cart"></i> Purchase
+                    details</button>
+                </div>
+              </div>
+              </div>
+            </div>
+
+            <div class="carousel-item ">
+              <div class="d-flex m-0">
+              <div class="col-3 p-0">
+                <span class="img3 hotdeals"></span>
+              </div>
+              <div class="col-9 f-right">
+                <h4 class="font-weight-bold fs3">Mitchell MU75BK Concert Ukulele</h4>
+                <h5 class="red fs2">New</h5>
+                <h6 class="fs2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, perspiciatis.
+                  Delectus, labore!
+                </h6>
+                <h5 class="fs2"><strong>From:</strong> London, UK</h5>
+                <div class="d-flex adsBut fs3">
+                  <button type="button">$129.99</button>
+                  <button type="button" class="border-left border-light"><i class="fas fa-shopping-cart"></i> Purchase
+                    details</button>
+                </div>
+              </div>
+            </div>
+            </div> 
+          </div>
+          <a class="carousel-control-prev red" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next red" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="listProd">
+      <div class="d-flex align-items-baseline m-0">
+        <h4 class="mt4 dark font-weight-bold fs3 title"><i class="fas fa-drum"></i> Drum kits</h4>
+        <p class="mt4 ml-4 grey font-weight-bold m-0 fs2">(Drums, cymbals, racks and much more)</p>
+      </div>
+      <hr class="bg-grey mt-0">
+      <ul class="products">
+        <li>
+          <img
+            src="https://gloimg.gbtcdn.com/images/pdm-product-pic/Electronic/2019/05/10/source-img/20190510143637_37273.jpg_100x100.jpg"
+            alt="product">
+          <div>
+            <h4 class="font-weight-bold fs2"><a>SLADE 14 inch Snare Drum with Stick Strap Wrench - Red Wine 4</a></h4>
+            <h5 class="red fs2">New</h5>
+            <h5 class="fs2"><strong>From:</strong> Juiz de Fora, Brazil</h5>
+
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="dropdown size m-0">
+                <button class="btn btn-light p-0" type="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-plus-square red fs3 font-weight-bold"></i>
+                </button>
+                <div class="dropdown-menu border">
+                  <a class="dropdown-item" href="#">Add to Wishlist</a>
+                  <a class="dropdown-item" href="#">Send a Message</a>
+                  <a class="dropdown-item" href="#">More Details</a>
+                </div>
+              </div>
+              <h4 class="red font-weight-bold fs3 m-0"> <a class="red" href="#">$57.93</a></h4>
+            </div>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://media.musiciansfriend.com/is/image/MMGS7/Effects-Cymbal-Stack/K36911000000000-00-220x220.jpg"
+            alt="product">
+          <div>
+            <h4 class="font-weight-bold fs2"><a>Agazarian Effects Cymbal Stack</a></h4>
+            <h5 class="red fs2">Used</h5>
+            <h5 class="fs2"><strong>From:</strong> Além Paraíba, Brazil</h5>
+
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="dropdown size m-0">
+                <button class="btn btn-light p-0" type="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-plus-square red fs3 font-weight-bold"></i>
+                </button>
+                <div class="dropdown-menu border">
+                  <a class="dropdown-item" href="#">Add to Wishlist</a>
+                  <a class="dropdown-item" href="#">Send a Message</a>
+                  <a class="dropdown-item" href="#">More Details</a>
+                </div>
+              </div>
+              <h4 class="red font-weight-bold fs3 m-0"> <a class="red" href="#">$37.99</a></h4>
+            </div>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://media.musiciansfriend.com/is/image/MMGS7/5-Piece-Complete-Drum-Set-Black/J56102000002000-00-220x220.jpg"
+            alt="product">
+          <div>
+            <h4 class="font-weight-bold fs2"><a>Rogue 5-Piece Complete Drum Set</a></h4>
+            <h5 class="red fs2">New</h5>
+            <h5 class="fs2"><strong>From:</strong> Rio de Janeiro, Brazil</h5>
+
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="dropdown size m-0">
+                <button class="btn btn-light p-0" type="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-plus-square red fs3 font-weight-bold"></i>
+                </button>
+                <div class="dropdown-menu border">
+                  <a class="dropdown-item" href="#">Add to Wishlist</a>
+                  <a class="dropdown-item" href="#">Send a Message</a>
+                  <a class="dropdown-item" href="#">More Details</a>
+                </div>
+              </div>
+
+              <h4 class="red font-weight-bold fs3 m-0"> <a class="red" href="#">$349.99</a></h4>
+            </div>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://media.musiciansfriend.com/is/image/MMGS7/SD350-Electronic-Drum-Kit-with-Mesh-Pads/J52903000000000-00-220x220.jpg"
+            alt="product">
+          <div>
+            <h4 class="font-weight-bold fs2"><a>Simmons SD350 Electronic Drum Kit with Mesh Pads</a></h4>
+            <h5 class="red fs2">New</h5>
+            <h5 class="fs2"><strong>From:</strong> Juiz de Fora, Brazil</h5>
+
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="dropdown size m-0">
+                <button class="btn btn-light p-0" type="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-plus-square red fs3 font-weight-bold"></i>
+                </button>
+                <div class="dropdown-menu border">
+                  <a class="dropdown-item" href="#">Add to Wishlist</a>
+                  <a class="dropdown-item" href="#">Send a Message</a>
+                  <a class="dropdown-item" href="#">More Details</a>
+                </div>
+              </div>
+              <h4 class="red font-weight-bold fs3 m-0"> <a class="red" href="#">$319.99</a></h4>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <div class="d-flex align-items-baseline m-0">
+        <h4 class="mt4 dark font-weight-bold fs3 title"><i class="fas fa-guitar"></i> Guitars</h4>
+        <p class="mt4 ml-4 grey font-weight-bold m-0 fs2">(Acoustic and electric guitars)</p>
+      </div>
+      <hr class="bg-grey mt-0">
+      <ul class="products">
+        <li>
+          <img
+            src="https://media.musiciansfriend.com/is/image/MMGS7/Pursuit-Exotic-Concerto-CE-Myrtlewood-Myrtlewood-Acoustic-Electric-Guitar-Cinnamon-Burst/L47817000001000-00-220x220.jpg"
+            alt="product">
+          <div>
+            <h4 class="font-weight-bold fs2"><a>Breedlove Pursuit Exotic Concerto CE Myrtlewood-Myrtlewood...</a></h4>
+            <h5 class="red fs2">New</h5>
+            <h5 class="fs2"><strong>From:</strong> Wroclaw, Poland</h5>
+
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="dropdown size m-0">
+                <button class="btn btn-light p-0" type="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-plus-square red fs3 font-weight-bold"></i>
+                </button>
+                <div class="dropdown-menu border">
+                  <a class="dropdown-item" href="#">Add to Wishlist</a>
+                  <a class="dropdown-item" href="#">Send a Message</a>
+                  <a class="dropdown-item" href="#">More Details</a>
+                </div>
+              </div>
+              <h4 class="red font-weight-bold fs3 m-0"> <a class="red" href="#">$459.99</a></h4>
+            </div>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://media.musiciansfriend.com/is/image/MMGS7/Premier-Series-EXL-1-Hollowbody-Electric-Guitar-with-Stairstep-Tailpiece-Black/J47122000001000-00-220x220.jpg"
+            alt="product">
+          <div>
+            <h4 class="font-weight-bold fs2"><a>D'Angelico Premier Series EXL-1 Hollowbody Electric Guitar...</a></h4>
+            <h5 class="red fs2">Used</h5>
+            <h5 class="fs2"><strong>From:</strong> Plitwice, Poland</h5>
+
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="dropdown size m-0">
+                <button class="btn btn-light p-0" type="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-plus-square red fs3 font-weight-bold"></i>
+                </button>
+                <div class="dropdown-menu border">
+                  <a class="dropdown-item" href="#">Add to Wishlist</a>
+                  <a class="dropdown-item" href="#">Send a Message</a>
+                  <a class="dropdown-item" href="#">More Details</a>
+                </div>
+              </div>
+              <h4 class="red font-weight-bold fs3 m-0"> <a class="red" href="#">$379.99</a></h4>
+            </div>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://media.musiciansfriend.com/is/image/MMGS7/Premier-CS-Series-Fulton-Grand-Auditorium-12-String-Acoustic-Electric-Guitar-Black/L54663000001000-00-220x220.jpg"
+            alt="product">
+          <div>
+            <h4 class="font-weight-bold fs2"><a>D'Angelico Premier CS Series Fulton Grand Auditorium...</a></h4>
+            <h5 class="red fs2">New</h5>
+            <h5 class="fs2"><strong>From:</strong> Opole, Poland</h5>
+
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="dropdown size m-0">
+                <button class="btn btn-light p-0" type="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-plus-square red fs3 font-weight-bold"></i>
+                </button>
+                <div class="dropdown-menu border">
+                  <a class="dropdown-item" href="#">Add to Wishlist</a>
+                  <a class="dropdown-item" href="#">Send a Message</a>
+                  <a class="dropdown-item" href="#">More Details</a>
+                </div>
+              </div>
+
+              <h4 class="red font-weight-bold fs3 m-0"> <a class="red" href="#">$549.99</a></h4>
+            </div>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://media.musiciansfriend.com/is/image/MMGS7/USA-Concerto-E-Sitka-Spruce-Mahogany-Acoustic-Electric-Guitar-Cinnamon-Burst/L72172000001000-00-220x220.jpg"
+            alt="product">
+          <div>
+            <h4 class="font-weight-bold fs2"><a>Breedlove USA Concerto E Sitka Spruce-Mahogany...</a></h4>
+            <h5 class="red fs2">New</h5>
+            <h5 class="fs2"><strong>From:</strong> Gdansk, Poland</h5>
+
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="dropdown size m-0">
+                <button class="btn btn-light p-0" type="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-plus-square red fs3 font-weight-bold"></i>
+                </button>
+                <div class="dropdown-menu border">
+                  <a class="dropdown-item" href="#">Add to Wishlist</a>
+                  <a class="dropdown-item" href="#">Send a Message</a>
+                  <a class="dropdown-item" href="#">More Details</a>
+                </div>
+              </div>
+              <h4 class="red font-weight-bold fs3 m-0"> <a class="red" href="#">$619.99</a></h4>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="d-flex align-items-baseline m-0">
+        <h4 class="mt4 dark font-weight-bold fs3 title">🎹 Pianos </h4>
+        <p class="mt4 ml-4 grey font-weight-bold m-0 fs2">(Pianos and Musical Keyboards)</p>
+      </div>
+      <hr class="bg-grey mt-0">
+      <ul class="products">
+        <li>
+          <img
+            src="https://media.musiciansfriend.com/is/image/MMGS7/Overture-2-88-Key-Console-Digital-Piano/J17210000000000-00-220x220.jpg"
+            alt="product">
+          <div>
+            <h4 class="font-weight-bold fs2"><a>Williams Overture 2 88-Key Console Digital Piano</a></h4>
+            <h5 class="red fs2">New</h5>
+            <h5 class="fs2"><strong>From:</strong> London, UK</h5>
+
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="dropdown size m-0">
+                <button class="btn btn-light p-0" type="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-plus-square red fs3 font-weight-bold"></i>
+                </button>
+                <div class="dropdown-menu border">
+                  <a class="dropdown-item" href="#">Add to Wishlist</a>
+                  <a class="dropdown-item" href="#">Send a Message</a>
+                  <a class="dropdown-item" href="#">More Details</a>
+                </div>
+              </div>
+              <h4 class="red font-weight-bold fs3 m-0"> <a class="red" href="#">$799.99</a></h4>
+            </div>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://media.musiciansfriend.com/is/image/MMGS7/MDG-300-Black-Micro-Grand-Digital-Piano/J19268000000000-00-220x220.jpg"
+            alt="product">
+          <div>
+            <h4 class="font-weight-bold fs2"><a>Williams Black Stand for Williams Legato Digital Pianos</a></h4>
+            <h5 class="red fs2">Used</h5>
+            <h5 class="fs2"><strong>From:</strong> Manchester, UK</h5>
+
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="dropdown size m-0">
+                <button class="btn btn-light p-0" type="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-plus-square red fs3 font-weight-bold"></i>
+                </button>
+                <div class="dropdown-menu border">
+                  <a class="dropdown-item" href="#">Add to Wishlist</a>
+                  <a class="dropdown-item" href="#">Send a Message</a>
+                  <a class="dropdown-item" href="#">More Details</a>
+                </div>
+              </div>
+              <h4 class="red font-weight-bold fs3 m-0"> <a class="red" href="#">$377.99</a></h4>
+            </div>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://media.musiciansfriend.com/is/image/MMGS7/CTP-88-Innovation-Digital-Piano/J14201000000000-00-220x220.jpg"
+            alt="product">
+          <div>
+            <h4 class="font-weight-bold fs2"><a>Suzuki CTP-88 Innovation Digital Piano</a></h4>
+            <h5 class="red fs2">New</h5>
+            <h5 class="fs2"><strong>From:</strong> Edimburg, UK</h5>
+
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="dropdown size m-0">
+                <button class="btn btn-light p-0" type="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-plus-square red fs3 font-weight-bold"></i>
+                </button>
+                <div class="dropdown-menu border">
+                  <a class="dropdown-item" href="#">Add to Wishlist</a>
+                  <a class="dropdown-item" href="#">Send a Message</a>
+                  <a class="dropdown-item" href="#">More Details</a>
+                </div>
+              </div>
+
+              <h4 class="red font-weight-bold fs3 m-0"> <a class="red" href="#">$949.99</a></h4>
+            </div>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://media.musiciansfriend.com/is/image/MMGS7/Allegro-III-Keyboard-Intro-Package/L48167000000000-00-220x220.jpg"
+            alt="product">
+          <div>
+            <h4 class="font-weight-bold fs2"><a>Williams Allegro III Keyboard Intro Package</a></h4>
+            <h5 class="red fs2">New</h5>
+            <h5 class="fs2"><strong>From:</strong> Glasgow, UK</h5>
+
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="dropdown size m-0">
+                <button class="btn btn-light p-0" type="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-plus-square red fs3 font-weight-bold"></i>
+                </button>
+                <div class="dropdown-menu border">
+                  <a class="dropdown-item" href="#">Add to Wishlist</a>
+                  <a class="dropdown-item" href="#">Send a Message</a>
+                  <a class="dropdown-item" href="#">More Details</a>
+                </div>
+              </div>
+              <h4 class="red font-weight-bold fs3 m-0"> <a class="red" href="#">$499.99</a></h4>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="d-flex align-items-baseline m-0">
+        <h4 class="mt4 dark font-weight-bold fs3 title">🎺 Trumpets</h4>
+        <p class="mt4 ml-4 grey font-weight-bold m-0 fs2">(All types of trumpets.)</p>
+      </div>
+      <hr class="bg-grey mt-0">
+      <ul class="products">
+        <li>
+          <img
+            src="https://media.musiciansfriend.com/is/image/MMGS7/ETR-100-Series-Student-Bb-Trumpet-Lacquer/463676000420000-00-220x220.jpg"
+            alt="product">
+          <div>
+            <h4 class="font-weight-bold fs2"><a>Etude ETR-100 Series Student Bb Trumpet</a></h4>
+            <h5 class="red fs2">New</h5>
+            <h5 class="fs2"><strong>From:</strong> Juiz de Fora, Brazil</h5>
+
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="dropdown size m-0">
+                <button class="btn btn-light p-0" type="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-plus-square red fs3 font-weight-bold"></i>
+                </button>
+                <div class="dropdown-menu border">
+                  <a class="dropdown-item" href="#">Add to Wishlist</a>
+                  <a class="dropdown-item" href="#">Send a Message</a>
+                  <a class="dropdown-item" href="#">More Details</a>
+                </div>
+              </div>
+              <h4 class="red font-weight-bold fs3 m-0"> <a class="red" href="#">$99.99</a></h4>
+            </div>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://media.musiciansfriend.com/is/image/MMGS7/GTR-300-Student-Bb-Trumpet/J47420000000000-00-220x220.jpg"
+            alt="product">
+          <div>
+            <h4 class="font-weight-bold fs2"><a>Giardinelli GTR-300 Student Bb Trumpet</a></h4>
+            <h5 class="red fs2">Used</h5>
+            <h5 class="fs2"><strong>From:</strong> Além Paraíba, Brazil</h5>
+
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="dropdown size m-0">
+                <button class="btn btn-light p-0" type="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-plus-square red fs3 font-weight-bold"></i>
+                </button>
+                <div class="dropdown-menu border">
+                  <a class="dropdown-item" href="#">Add to Wishlist</a>
+                  <a class="dropdown-item" href="#">Send a Message</a>
+                  <a class="dropdown-item" href="#">More Details</a>
+                </div>
+              </div>
+              <h4 class="red font-weight-bold fs3 m-0"> <a class="red" href="#">$837.99</a></h4>
+            </div>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://media.musiciansfriend.com/is/image/MMGS7/ATR-450-Vienna-Series-Intermediate-Bb-Trumpet-Silver-plated/J50836000001000-00-220x220.jpg"
+            alt="product">
+          <div>
+            <h4 class="font-weight-bold fs2"><a>Allora ATR-450 Vienna Series Intermediate Bb Trumpet</a></h4>
+            <h5 class="red fs2">New</h5>
+            <h5 class="fs2"><strong>From:</strong> Juiz de Fora, Brazil</h5>
+
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="dropdown size m-0">
+                <button class="btn btn-light p-0" type="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-plus-square red fs3 font-weight-bold"></i>
+                </button>
+                <div class="dropdown-menu border">
+                  <a class="dropdown-item" href="#">Add to Wishlist</a>
+                  <a class="dropdown-item" href="#">Send a Message</a>
+                  <a class="dropdown-item" href="#">More Details</a>
+                </div>
+              </div>
+
+              <h4 class="red font-weight-bold fs3 m-0"> <a class="red" href="#">$649.99</a></h4>
+            </div>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://media.musiciansfriend.com/is/image/MMGS7/ETR-200-Series-Student-Bb-Trumpet-Lacquer/J50855000001000-00-220x220.jpg"
+            alt="product">
+          <div>
+            <h4 class="font-weight-bold fs2"><a>Etude ETR-200 Series Student Bb Trumpet</a></h4>
+            <h5 class="red fs2">New</h5>
+            <h5 class="fs2"><strong>From:</strong> Juiz de Fora, Brazil</h5>
+
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="dropdown size m-0">
+                <button class="btn btn-light p-0" type="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-plus-square red fs3 font-weight-bold"></i>
+                </button>
+                <div class="dropdown-menu border">
+                  <a class="dropdown-item" href="#">Add to Wishlist</a>
+                  <a class="dropdown-item" href="#">Send a Message</a>
+                  <a class="dropdown-item" href="#">More Details</a>
+                </div>
+              </div>
+              <h4 class="red font-weight-bold fs3 m-0"> <a class="red" href="#">$219.99</a></h4>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+    </section>
+  </main>
+  <hr>
+  <footer>
+    <div class="d-flex justify-content-around row m-0">
+      <div class="left-footer text-center col-md-4 ">
+        <a href="index.html" class="grey font-weight-bold"><i class="fa fa-guitar red"></i>JAZZIX</a>
+
+        <p class="grey px-1 fs2 ml-3 text-left">Lorem ipsum dolor, sit amet consectetur adipisicing elit. In praesentium
+          culpa
+          dignissimos cupiditate doloremque quia assumenda! Aliquam dolor ratione quisquam.</p>
+      </div>
+      <div class="right-footer">
+        <div class="footerGrid">
+
+          <a href="#" class="fs3 red">Categories</a>
+          <a href="#" class="fs3 red">More Ways to Shop</a>
+          <a href="#" class="fs3 red">Why Shop With Us</a>
+
+          <hr class="bg-red m-0">
+          <hr class="bg-red m-0">
+          <hr class="bg-red m-0">
+
+          <ul class="font-weight-bold grey">
+            <li><a href="#" class="fs2 grey">Drumkits</a></li>
+            <li><a href="#" class="fs2 grey">Guitars</a></li>
+            <li><a href="#" class="fs2 grey">Basses</a></li>
+            <li><a href="#" class="fs2 grey">Pianos</a></li>
+            <li><a href="#" class="fs2 grey">Ukulele</a></li>
+            <li><a href="#" class="fs2 grey">Trumpets</a></li>
+          </ul>
+
+          <ul class="font-weight-bold grey">
+            <li><a href="#" class="fs2 grey">Hot Deals</a></li>
+            <li><a href="#" class="fs2 grey">Open Box</a></li>
+            <li><a href="#" class="fs2 grey">Restock</a></li>
+            <li><a href="#" class="fs2 grey">By Brand</a></li>
+            <li><a href="#" class="fs2 grey">New Arrivals</a></li>
+            <li><a href="#" class="fs2 grey"></a></li>
+          </ul>
+
+          <ul class="font-weight-bold grey">
+            <li><a href="#" class="fs2 grey">Free Ground Shipping</a></li>
+            <li><a href="#" class="fs2 grey">45-Day Return Policy</a></li>
+            <li><a href="#" class="fs2 grey">Largest Selection</a></li>
+            <li><a href="#" class="fs2 grey">Private Reserve</a></li>
+            <li><a href="#" class="fs2 grey"></a></li>
+            <li><a href="#" class="fs2 grey"></a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+    <hr class="bg-grey">
+
+    <div class="grey text-center">
+      <h5 class="fs2"> © 2020 Jazzix.com. All Rights Reserved. Designed by Mohammed Awad. Adapted by Alexandre Bouhid.
+      </h5>
+      <a href="#"><i class="fab fa-facebook-square text-secondary h3"></i></a>
+      <a href="#"><i class="fab fa-twitter text-secondary h4 ml-2"></i></a>
+      <a href="#"><i class="fab fa-instagram text-secondary h4 ml-2"></i></a>
+      <a href="#"><i class="fab fa-tumblr text-secondary h4 ml-2"></i></a>
+      <a href="#"><i class="fab fa-spotify text-secondary h4 ml-2"></i></a>
+
+    </div>
+  </footer>
+</body>
+
+</html>
