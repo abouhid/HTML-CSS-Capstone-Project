@@ -37,7 +37,7 @@ This project consists of building using:
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/abouhid/Using-Bootstrap/issues).
+Feel free to check the [issues page](https://github.com/abouhid/HTML-CSS-Capstone-Project/issues).
 
 ## Show your support
 
