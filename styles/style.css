@@ -171,7 +171,7 @@ nav a,
   margin-top: 4vw;
 }
 
-.p5 h3 {
+.p5 h1 {
   font-size: 8vw;
   margin: 3vw auto;
 }
@@ -185,7 +185,7 @@ nav a,
   background-image: linear-gradient(rgb(211, 82, 102, 0.5) 60%, rgb(56, 56, 56)), url(https://cdn2.vectorstock.com/i/1000x1000/50/61/jazz-seamless-background-vector-1445061.jpg);
 }
 
-.header h3,
+.header h1,
 .header h4 {
   text-shadow: 2px 2px #383838;
   font-family: "helvetica-bold", Arial, Helvetica, sans-serif;
@@ -205,31 +205,49 @@ nav a,
   font-family: "helvetica-light", Arial, Helvetica, sans-serif;
 }
 
-.float-left {
-  height: auto;
+.hotdeals {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
 }
 
-.float-right h4,
-.float-right h5,
-.float-right h6 {
+.img1 {
+  background-image: linear-gradient(to bottom, transparent, black), url(https://http2.mlstatic.com/guitarra-gibson-traditional-les-paul-premium-plus-wine-red-D_NQ_NP_711687-MLB42319823910_062020-F.webp);
+}
+
+.img2 {
+  background-image: linear-gradient(to bottom, transparent, black), url(https://gloimg.gbtcdn.com/storage/item/6538088194642685952/15607/f6f43ac93373.jpg_100x100.jpg);
+}
+
+.img3 {
+  background-image: linear-gradient(to bottom, transparent, black), url(https://media.musiciansfriend.com/is/image/MMGS7/MU75BK-Concert-Ukulele-Black/H79198000001000-00-220x220.jpg);
+}
+
+.f-right h4,
+.f-right h5,
+.f-right h6 {
   margin-bottom: 1vh;
 }
 
 .carousel-inner {
-  padding: 0 10%;
+  padding: 0 5%;
 }
 
 .adsBut button {
-  padding: 2% 3%;
+  padding: 7px;
   background-color: #d35266;
   border: none;
   color: white;
   margin-top: 2vw;
+  white-space: nowrap;
 }
 
 .products {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
   gap: 1vw;
   color: #888;
 }
@@ -274,7 +292,7 @@ nav a,
   grid-row-gap: 10px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1440px) {
   .nav-right {
     display: flex;
     width: fit-content;
@@ -318,5 +336,70 @@ nav a,
 
   .listProd .title {
     font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 424px) {
+  .fs3 {
+    font-size: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+  }
+
+  .fs2 {
+    font-size: 13px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+  }
+
+  .left-footer p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 10;
+    -webkit-box-orient: vertical;
+  }
+
+  .adsBut button {
+    font-size: 3vw;
+  }
+
+  nav ul li {
+    font-size: 8px;
+  }
+
+  nav ul li:last-child {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1441px) {
+  
+  .fs3 {
+    font-size: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+
+  .fs2 {
+    font-size: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+
+  nav ul li {
+    font-size: 20px;
   }
 }
