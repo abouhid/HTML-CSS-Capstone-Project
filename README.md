@@ -19,6 +19,10 @@ This project consists of building using:
 
 [Live Demo Link](https://raw.githack.com/abouhid/HTML-CSS-Capstone-Project/feature-branch/index.html)
 
+## Video Presentation of the project
+
+[Video Presentation Link] (https://www.loom.com/share/65a25489c7f44cb795b0bf7dab328418)
+
 ### Prerequisites
 
 - Browser (Google Chrome, Mozilla Firefox, Safari or any other browser)
