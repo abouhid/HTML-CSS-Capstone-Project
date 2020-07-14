@@ -191,14 +191,14 @@ nav a,
   font-family: "helvetica-bold", Arial, Helvetica, sans-serif;
 }
 
-.header li >*{
+.header li > * {
   font-size: 2vw;
-  min-width:15px
+  min-width: 15px;
 }
 
 .size button {
   font-size: 2vw;
-} 
+}
 
 .fs2 {
   font-size: 2vw;
@@ -229,7 +229,7 @@ nav a,
 
 .products {
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(170px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
   gap: 1vw;
   color: #888;
 }
@@ -290,7 +290,6 @@ nav a,
   .nav-left {
     justify-content: space-around;
   }
-
 
   .nav-left li,
   .nav-left li button {

@@ -188,7 +188,7 @@ nav a,
 
 .header li > * {
   font-size: 2vw;
-  min-width:15px
+  min-width: 15px;
 }
 
 .fs2 {
@@ -202,7 +202,7 @@ nav a,
 
 .size button {
   font-size: 2vw;
-} 
+}
 
 .float-right h4,
 .float-right h5,
