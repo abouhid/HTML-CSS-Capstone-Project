@@ -1,10 +1,11 @@
-# Using-Bootstrap
+# Capstone-Project
 
-> This project consists of replicating the Newsweek website putting emphasis on how it behaves differently depending on the size of the screen where the website is rendered. It used bootstrap monstly and is completed based on the requirement of Microverse's program/course titled "HTML and CSS".
+> This project consists of creating almost from scratch an online shopping website based on Mohammed Awad's [ZATTIX](https://www.behance.net/gallery/24796463/ZATTIX) website. Fonts, colors and general positioning are required and content was chosen due to my love for music. There are 2 pages totally responsive for all types of viewports.
 
-![screenshot](./app_screenshot.png)
+![screenshot](./capstonepic1.png)
+![screenshot](./capstonepic2.png)
 
-This project consists of building a webpage using:
+This project consists of building using:
 - Bootstrap
 - Media queries
 - Align all elements with float and flex or grid.
@@ -16,7 +17,7 @@ This project consists of building a webpage using:
 
 ## DEMO
 
-[Live Demo Link](https://raw.githack.com/abouhid/Using-Bootstrap/feature-branch/index.html)
+[Live Demo Link](https://raw.githack.com/abouhid/HTML-CSS-Capstone-Project/feature-branch/index.html)
 
 ### Prerequisites
 
