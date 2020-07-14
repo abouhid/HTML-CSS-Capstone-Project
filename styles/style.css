@@ -89,7 +89,6 @@ video {
   vertical-align: baseline;
 }
 
-
 @font-face {
   font-family: "helvetica-neue";
   font-display: swap;
@@ -152,7 +151,7 @@ nav a,
   color: #888;
 }
 
-.bg-grey{
+.bg-grey {
   background-color: #f8f8f8;
 }
 
@@ -177,61 +176,65 @@ nav a,
   margin: 3vw auto;
 }
 
-.fs3{
+.fs3 {
   font-size: 3vw;
   font-family: "helvetica-bold", Arial, Helvetica, sans-serif;
 }
 
-.header{
+.header {
   background-image: linear-gradient(rgb(211, 82, 102, 0.5) 60%, rgb(56, 56, 56)), url(https://cdn2.vectorstock.com/i/1000x1000/50/61/jazz-seamless-background-vector-1445061.jpg);
 }
 
 .header h3,
-.header h4{
+.header h4 {
   text-shadow: 2px 2px #383838;
   font-family: "helvetica-bold", Arial, Helvetica, sans-serif;
 }
 
-.form-inline input, 
-.size button {
-font-size: 2.5vw;
+.header li >*{
+  font-size: 2vw;
+  min-width:15px
 }
 
-.fs2{
+.size button {
+  font-size: 2vw;
+} 
+
+.fs2 {
   font-size: 2vw;
   font-family: "helvetica-light", Arial, Helvetica, sans-serif;
 }
 
-.float-left{
+.float-left {
   height: auto;
 }
 
- .float-right h4,
- .float-right h5,
- .float-right h6 {
+.float-right h4,
+.float-right h5,
+.float-right h6 {
   margin-bottom: 1vh;
 }
 
-.carousel-inner{
+.carousel-inner {
   padding: 0 10%;
 }
 
-.adsBut button{
+.adsBut button {
   padding: 2% 3%;
-    background-color: #d35266; 
-    border: none;
-    color: white;
-    margin-top: 2vw;
+  background-color: #d35266;
+  border: none;
+  color: white;
+  margin-top: 2vw;
 }
 
-.products{
+.products {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  grid-template-columns: repeat(auto-fit,minmax(170px, 1fr));
   gap: 1vw;
   color: #888;
 }
 
-.products img{
+.products img {
   width: 75%;
   align-self: center;
   padding: 6%;
@@ -239,7 +242,7 @@ font-size: 2.5vw;
   max-height: 50%;
 }
 
-.products li{
+.products li {
   border: 1px solid #d35266;
   border-radius: 3px;
   margin: auto 10px;
@@ -251,74 +254,70 @@ font-size: 2.5vw;
   justify-content: space-between;
 }
 
-.left-footer{
-  padding:3%;
+.left-footer {
+  padding: 3%;
 }
 
-.left-footer a{
+.left-footer a {
   font-size: 5vw;
 }
-.nav-right{
+
+.nav-right {
   display: none;
 }
 
-.footerGrid{
+.footerGrid {
   display: inline-grid;
-  grid-template-columns: auto auto auto ;
+  grid-template-columns: auto auto auto;
   padding: 10px;
   grid-column-gap: 10px;
   grid-row-gap: 10px;
 }
 
-
-
 @media screen and (min-width: 768px) {
-.nav-right{
-  display: flex;  
-  width: fit-content;
-  padding: 0 20px;
-  white-space: nowrap;
-}
+  .nav-right {
+    display: flex;
+    width: fit-content;
+    padding: 0 20px;
+    white-space: nowrap;
+  }
 
-.nav-right li{
-  margin-left: 20px;
-  cursor: pointer;
-}
+  .nav-right li {
+    margin-left: 20px;
+    cursor: pointer;
+  }
 
-.nav-left {
-  justify-content: space-around;
-}
+  .nav-left {
+    justify-content: space-around;
+  }
 
-.nav-left li,
-.nav-left li button {
-  font-size: 14px;
-}
 
-.fs3{
-  font-size: 18px;
-}
-.fs2{
-  font-size: 16px;
-}
+  .nav-left li,
+  .nav-left li button {
+    font-size: 14px;
+  }
 
-.size button,
-.form-inline input{
-  font-size: 20px;
-}
+  .fs3 {
+    font-size: 18px;
+  }
 
-.products{
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
-}
-.products h4{
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-}
+  .fs2 {
+    font-size: 16px;
+  }
 
-.listProd .title{
-  font-size: 36px;
-}
+  .products {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+  }
 
+  .products h4 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+
+  .listProd .title {
+    font-size: 36px;
+  }
 }

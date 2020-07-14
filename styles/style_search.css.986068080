@@ -186,11 +186,6 @@ nav a,
   text-shadow: 2px 2px #383838;
 }
 
-.header li > * {
-  font-size: 2vw;
-  min-width:15px
-}
-
 .fs2 {
   font-size: 2vw;
   font-family: "helvetica-light", Arial, Helvetica, sans-serif;
@@ -199,10 +194,6 @@ nav a,
 .float-left {
   height: auto;
 }
-
-.size button {
-  font-size: 2vw;
-} 
 
 .float-right h4,
 .float-right h5,
@@ -315,6 +306,10 @@ input[type=checkbox] {
     justify-content: space-around;
   }
 
+  .size a {
+    font-size: 20px;
+  }
+
   .nav-left li,
   .nav-left li button {
     font-size: 14px;
@@ -326,6 +321,10 @@ input[type=checkbox] {
 
   .fs2 {
     font-size: 16px;
+  }
+
+  .form-inline input {
+    font-size: 20px;
   }
 
   .products h4 {
